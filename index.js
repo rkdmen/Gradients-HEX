@@ -1,6 +1,6 @@
 window.log = console.log;
 $(document).ready(() => {
-  /*https://stackoverflow.com/questions/1740700/how-to-get-hex-color-value-rather-than-rgb-value*/
+  /* https://stackoverflow.com/questions/1740700/how-to-get-hex-color-value-rather-than-rgb-value */
   var hexDigits = new Array("0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", "c", "d", "e", "f");
   //Function to convert rgb color to hex format
   function rgb2hex(rgb) {
@@ -20,8 +20,10 @@ $(document).ready(() => {
   log('Colors by john kmj √');
   $('._color').hover(function(e) {
     let bgColor = $(this).css('background-color');
-    let hex = rgb2hex(bgColor)
-    $(this).html(hex)
+    let hex = rgb2hex(bgColor);
+    $(this).html(hex);
+    $(this).toggleClass('_scale');
   })
 
 });
+

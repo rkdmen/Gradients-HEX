@@ -18,36 +18,55 @@
   .color_lists {
     display: flex;
     flex-direction: column;
+    padding: 0;
+    border: thin solid #f5f5f5;
   }
   .color_lists li {
+    transition:  all ease-in-out .2s;
     width: 120px;
     height: 20px;
     border: 1px solid transparent;
     list-style: none;
   }
+  ._scale {
+    border-radius: 3px;
+    transform: scale(1.05);
+  }
   ._100 {
-    background-color: #02b554;
+    background-color: #25D76D;
   }
   ._95 {
-    background-color: #25D76D;
+    background-color: #3AEB7C;
   }
   ._90 {
     background-color: #4FFF8A;
   }
   ._85 {
-    background-color: #63FF85;
+    background-color: #66FF84;
   }
   ._80 {
     background-color: #7CFF7E;
   }
+  ._75 {
+    background-color: #96FF85;
+  }
   ._70 {
     background-color: #B0FF8C;
+  }
+  ._65 {
+    background-color: #B6FF97;
   }
   ._60 {
     background-color: #BBFFA2;
   }
+  ._55 {
+    background-color: #CBFF97;
+  }
   ._50 {
     background-color: #DBFF8C;
+  }
+  ._45 {
+    background-color: #EDFE84;
   }
   ._40 {
     background-color: #FFFD7C;
@@ -57,18 +76,23 @@
   }
   ._30 {
     background-color: #FFC44F;
-  }  ._25 {
-    background-color: #FF9A4F;
+  }
+  ._25 {
+    background-color: #FF964F;
   }
   ._20 {
     background-color: #ff674f;
+  }
+  ._15 {
+    background-color: #FF593F;
   }
   ._10 {
     background-color: #ff4b2e;
   }
   ._5 {
     background-color: #FF3615;
-  }  ._1 {
+  }
+  ._1 {
     background-color: #ff2401;
   }
   </style>
@@ -100,7 +124,7 @@
       <li class='_color '></li>
       <li class='_color '></li>
     </ul>
-    <ul class='color_lists'>
+    <ul class='color_lists' style='margin-left:10px;'>
       <li class='_color _100'></li>
       <li class='_color _95'></li>
       <li class='_color _90'></li>
@@ -128,7 +152,7 @@
     List of gradients for my personal use...
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src='/index.js'></script>
+  <script src='./index.js'></script>
 </body>
 
 </html>
